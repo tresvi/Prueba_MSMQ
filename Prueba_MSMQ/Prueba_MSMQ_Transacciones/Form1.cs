@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Messaging;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Prueba_MSMQ_Transacciones
@@ -25,7 +18,7 @@ namespace Prueba_MSMQ_Transacciones
             InitializeComponent();
         }
 
-        //Envio transaccional a 2 colas. O se envia a las 2 o a ninguna
+        //Envio transaccional a 2 colas. O bien se envia a las 2 colas o a ninguna
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             MessageQueue queueA = new MessageQueue(NOMBRE_COLA_A);
